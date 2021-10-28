@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://itsthompson.github.io/sitemap.xml
