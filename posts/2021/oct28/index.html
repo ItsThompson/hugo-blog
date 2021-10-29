@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>How I Set Up My Blog with Hugo | Thompson&#39;s Blog</title>
+<meta name="keywords" content="Hugo, PaperMod" />
+<meta name="description" content="Desc">
+<meta name="author" content="">
+<link rel="canonical" href="http://itsthompson.github.io/posts/2021/oct28/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.6f60056d44d3f7eb69a4bc6c332b59960f3a995802bded244750232f33713c49.css" integrity="sha256-b2AFbUTT9&#43;tppLxsMytZlg86mVgCve0kR1AjLzNxPEk=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://itsthompson.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://itsthompson.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://itsthompson.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://itsthompson.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://itsthompson.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.88.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="How I Set Up My Blog with Hugo" />
+<meta property="og:description" content="Desc" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://itsthompson.github.io/posts/2021/oct28/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-28T09:21:01&#43;08:00" />
+<meta property="article:modified_time" content="2021-10-28T09:21:01&#43;08:00" /><meta property="og:site_name" content="Thompson&#39;s Blog" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How I Set Up My Blog with Hugo"/>
+<meta name="twitter:description" content="Desc"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://itsthompson.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "How I Set Up My Blog with Hugo",
+      "item": "http://itsthompson.github.io/posts/2021/oct28/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How I Set Up My Blog with Hugo",
+  "name": "How I Set Up My Blog with Hugo",
+  "description": "Desc",
+  "keywords": [
+    "Hugo", "PaperMod"
+  ],
+  "articleBody": "Why create a blog? Sharing information has always been a cruitcial part of humans. Whether it be tips and tricks to get cheaper food, videos, and even scientific papers. In the current day and age of information, sharing knowledge is one of the key ways that we can advance. I always found helpful information through blogs and articles. For instance, I have used blogs during my IGCSE revision, during my IB Physics studies, and even for a wide variety of topics in game development.\nBecause I have begun my final two years in highschool, I have decided my knowledge may be finally useful to the world. It almost feels like paying back for all the knowledge that I have gained through the internet. My hope for this blog is to decrease the barriers of entry and that people can learn something new.\nLastly, this blog will allow me to have the chance of self-reflection and finding my strengths and weaknesses. This can allow me to be able to evaluate my own ideas, emotions, and how I process things.\nHow I did it Technologies  Github Hugo PaperMod Theme  The setup:  Create two github repositories. One for development and one for the static assets. The repo that contains your static assets will host the Github Pages for your website. Download hugo onto your computer. You can read this quick start guide for more information on how to install hugo. Clone your source code repository onto your computer. You can do this by typing the following in the terminal: git clone http://github.com//.git Create a new hugo site by typing the following in the terminal: hugo new site   Installing the Theme:  In the terminal, type cd themes Download the theme by typing git clone https://github.com/adityatelange/hugo-PaperMod.git In order to utilize the theme, we need to go to the config file. Go back to your root folder of this project and open config.toml. Because the theme authors recommended to convert the toml file into yml, I will changed the toml file into a yml file. At the beginning of the file you want to delete all of the contents and copy this in:  baseURL: \"http://.github.io/\" languageCode: en-us title:  theme: hugo-PaperMod Important thing to keep in mind is to get the base URL correct. If you are hosting your website slightly differently you may need to change the baseURL. If you would like to preview the site locally you can run the following: hugo server This will generate the code and sets up the web server for you to view.  Adding your first post  In the console, type hugo new post/.md The command will return a location to where the markdown file is generated. When you look at the file, there is the header where the title, date, and draft mode is. This is where you can fidget with the settings to your needs. Under the three dashes is where you can write your post contents.  Submodule In the beginning, we created two different repos. We will now add the other repo as a submodule. This will allow us to create a more structured project.\n In order to do this, we will need to make sure that the production repo is not empty. We can do this by cloning the production repo elsewhere and creating a README.md file. Once we have created a file in the production repo, we can place the repo inside our public folder in our project. To do this we write: git submodule add -b main We can generate our static files by typing the command hugo -t hugo-PaperMod We then enter into the public folder and push it into github and deploy the github page.  Configuring the config.yml Significant features:  Navbar options Home-info mode  Navbar Options menu: main: - name: Archive url: archive/ weight: 5 - name: Search url: search/ weight: 5 - name: Categories url: categories/ weight: 5 Home-info mode params: homeInfoParams: Title: Thompson's Blog Content: \"A personal blog exploring the field of mainly Computer Science but also Mathematics, Physics, and Economics.\" ",
+  "wordCount" : "673",
+  "inLanguage": "en",
+  "datePublished": "2021-10-28T09:21:01+08:00",
+  "dateModified": "2021-10-28T09:21:01+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://itsthompson.github.io/posts/2021/oct28/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thompson's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://itsthompson.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://itsthompson.github.io/" accesskey="h" title="Thompson&#39;s Blog (Alt + H)">Thompson&#39;s Blog</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://itsthompson.github.io/archive/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://itsthompson.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://itsthompson.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      How I Set Up My Blog with Hugo
+    </h1>
+    <div class="post-description">
+      Desc
+    </div>
+    <div class="post-meta">October 28, 2021&nbsp;·&nbsp;4 min&nbsp;|&nbsp;<a href="https://github.com/ItsThompson/blog/blob/main/content/posts/2021/Oct28.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#why-create-a-blog" aria-label="Why create a blog?">Why create a blog?</a></li>
+                <li>
+                    <a href="#how-i-did-it" aria-label="How I did it">How I did it</a><ul>
+                        
+                <li>
+                    <a href="#technologies" aria-label="Technologies">Technologies</a></li>
+                <li>
+                    <a href="#the-setup" aria-label="The setup:">The setup:</a></li>
+                <li>
+                    <a href="#installing-the-theme" aria-label="Installing the Theme:">Installing the Theme:</a></li>
+                <li>
+                    <a href="#adding-your-first-post" aria-label="Adding your first post">Adding your first post</a></li>
+                <li>
+                    <a href="#submodule" aria-label="Submodule">Submodule</a></li>
+                <li>
+                    <a href="#configuring-the-configyml" aria-label="Configuring the config.yml">Configuring the config.yml</a><ul>
+                        
+                <li>
+                    <a href="#significant-features" aria-label="Significant features:">Significant features:</a></li>
+                <li>
+                    <a href="#navbar-options" aria-label="Navbar Options">Navbar Options</a></li>
+                <li>
+                    <a href="#home-info-mode" aria-label="Home-info mode">Home-info mode</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="why-create-a-blog">Why create a blog?<a hidden class="anchor" aria-hidden="true" href="#why-create-a-blog">#</a></h2>
+<p>Sharing information has always been a cruitcial part of humans. Whether it be tips and tricks to get cheaper food, videos, and even scientific papers. In the current day and age of information, sharing knowledge is one of the key ways that we can advance. I always found helpful information through blogs and articles. For instance, I have used blogs during my IGCSE revision, during my IB Physics studies, and even for a wide variety of topics in game development.</p>
+<p>Because I have begun my final two years in highschool, I have decided my knowledge may be finally useful to the world. It almost feels like paying back for all the knowledge that I have gained through the internet. My hope for this blog is to decrease the barriers of entry and that people can learn something new.</p>
+<p>Lastly, this blog will allow me to have the chance of self-reflection and finding my strengths and weaknesses. This can allow me to be able to evaluate my own ideas, emotions, and how I process things.</p>
+<h2 id="how-i-did-it">How I did it<a hidden class="anchor" aria-hidden="true" href="#how-i-did-it">#</a></h2>
+<h3 id="technologies">Technologies<a hidden class="anchor" aria-hidden="true" href="#technologies">#</a></h3>
+<ul>
+<li><a href="https://github.com/">Github</a></li>
+<li><a href="https://gohugo.io/">Hugo</a></li>
+<li><a href="https://themes.gohugo.io/themes/hugo-papermod/">PaperMod Theme</a></li>
+</ul>
+<h3 id="the-setup">The setup:<a hidden class="anchor" aria-hidden="true" href="#the-setup">#</a></h3>
+<ol>
+<li>Create two github repositories. One for development and one for the static assets. The repo that contains your static assets will host the Github Pages for your website.</li>
+<li>Download hugo onto your computer. You can read <a href="https://gohugo.io/getting-started/quick-start/">this quick start guide</a> for more information on how to install hugo.</li>
+<li>Clone your source code repository onto your computer. You can do this by typing the following in the terminal: <code>git clone http://github.com/&lt;Username&gt;/&lt;RepoName&gt;.git</code></li>
+<li>Create a new hugo site by typing the following in the terminal: <code>hugo new site &lt;SiteName&gt;</code></li>
+</ol>
+<h3 id="installing-the-theme">Installing the Theme:<a hidden class="anchor" aria-hidden="true" href="#installing-the-theme">#</a></h3>
+<ol>
+<li>In the terminal, type <code>cd themes</code></li>
+<li>Download the theme by typing <code>git clone https://github.com/adityatelange/hugo-PaperMod.git</code></li>
+<li>In order to utilize the theme, we need to go to the config file. Go back to your root folder of this project and open config.toml. Because the theme authors recommended to convert the toml file into yml, I will changed the toml file into a yml file.</li>
+<li>At the beginning of the file you want to delete all of the contents and copy this in:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#f92672">baseURL</span>: <span style="color:#e6db74">&#34;http://&lt;Username&gt;.github.io/&#34;</span>
+<span style="color:#f92672">languageCode</span>: <span style="color:#ae81ff">en-us</span>
+<span style="color:#f92672">title</span>: <span style="color:#ae81ff">&lt;Title&gt;</span>
+<span style="color:#f92672">theme</span>: <span style="color:#ae81ff">hugo-PaperMod</span>
+</code></pre></div><ol start="5">
+<li>Important thing to keep in mind is to get the base URL correct. If you are hosting your website slightly differently you may need to change the baseURL.</li>
+<li>If you would like to preview the site locally you can run the following: <code>hugo server</code></li>
+<li>This will generate the code and sets up the web server for you to view.</li>
+</ol>
+<h3 id="adding-your-first-post">Adding your first post<a hidden class="anchor" aria-hidden="true" href="#adding-your-first-post">#</a></h3>
+<ol>
+<li>In the console, type <code>hugo new post/&lt;PostName&gt;.md</code></li>
+<li>The command will return a location to where the markdown file is generated.</li>
+<li>When you look at the file, there is the header where the title, date, and draft mode is. This is where you can fidget with the settings to your needs. Under the three dashes is where you can write your post contents.</li>
+</ol>
+<h3 id="submodule">Submodule<a hidden class="anchor" aria-hidden="true" href="#submodule">#</a></h3>
+<p>In the beginning, we created two different repos. We will now add the other repo as a submodule. This will allow us to create a more structured project.</p>
+<ol>
+<li>In order to do this, we will need to make sure that the production repo is not empty. We can do this by cloning the production repo elsewhere and creating a README.md file.</li>
+<li>Once we have created a file in the production repo, we can place the repo inside our public folder in our project. To do this we write: <code>git submodule add -b main</code></li>
+<li>We can generate our static files by typing the command <code>hugo -t hugo-PaperMod</code></li>
+<li>We then enter into the public folder and push it into github and deploy the github page.</li>
+</ol>
+<h3 id="configuring-the-configyml">Configuring the config.yml<a hidden class="anchor" aria-hidden="true" href="#configuring-the-configyml">#</a></h3>
+<h4 id="significant-features">Significant features:<a hidden class="anchor" aria-hidden="true" href="#significant-features">#</a></h4>
+<ul>
+<li>Navbar options</li>
+<li>Home-info mode</li>
+</ul>
+<h4 id="navbar-options">Navbar Options<a hidden class="anchor" aria-hidden="true" href="#navbar-options">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#f92672">menu</span>:
+    <span style="color:#f92672">main</span>:
+        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Archive</span>
+          <span style="color:#f92672">url</span>: <span style="color:#ae81ff">archive/</span>
+          <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">5</span>
+        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Search</span>
+          <span style="color:#f92672">url</span>: <span style="color:#ae81ff">search/</span>
+          <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">5</span>
+        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Categories</span>
+          <span style="color:#f92672">url</span>: <span style="color:#ae81ff">categories/</span>
+          <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">5</span>
+</code></pre></div><h4 id="home-info-mode">Home-info mode<a hidden class="anchor" aria-hidden="true" href="#home-info-mode">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#f92672">params</span>:
+    <span style="color:#f92672">homeInfoParams</span>:
+            <span style="color:#f92672">Title</span>: <span style="color:#ae81ff">Thompson&#39;s Blog</span>
+            <span style="color:#f92672">Content</span>: <span style="color:#e6db74">&#34;A personal blog exploring the field of mainly Computer Science but also Mathematics, Physics, and Economics.&#34;</span>
+</code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://itsthompson.github.io/tags/hugo/">Hugo</a></li>
+      <li><a href="http://itsthompson.github.io/tags/papermod/">PaperMod</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2021 <a href="http://itsthompson.github.io/">Thompson&#39;s Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
