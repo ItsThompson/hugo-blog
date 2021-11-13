@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Contradiction on Thompson&#39;s Blog</title>
+    <link>http://itsthompson.github.io/tags/contradiction/</link>
+    <description>Recent content in Contradiction on Thompson&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Nov 2021 22:02:23 +0800</lastBuildDate><atom:link href="http://itsthompson.github.io/tags/contradiction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proving √2 is irrational!</title>
+      <link>http://itsthompson.github.io/posts/2021/nov13/</link>
+      <pubDate>Sat, 13 Nov 2021 22:02:23 +0800</pubDate>
+      
+      <guid>http://itsthompson.github.io/posts/2021/nov13/</guid>
+      <description>Proving that square roots are irrational through counter </description>
+    </item>
+    
+  </channel>
+</rss>
